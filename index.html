@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <script defer src="login.js"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main>
+
+  <div id="data-entry">
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Email</th>
+    <th>Phone</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>test1</td>
+    <td>11</td>
+    <td>male</td>
+    <td>test1@gmail.com</td>
+    <td>9191919191</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>test2</td>
+    <td>12</td>
+    <td>male</td>
+    <td>test2@gmail.com</td>
+    <td>9292929292</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>test3</td>
+    <td>13</td>
+    <td>male</td>
+    <td>test3@gmail.com</td>
+    <td>9393939393</td>
+  </tr>
+  
+</table>
+</div>
+
+<button id="out">Logout</button>
+</body>
+
+</html>
